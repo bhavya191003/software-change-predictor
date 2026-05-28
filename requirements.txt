@@ -1,0 +1,6 @@
+pydriller
+pandas
+numpy
+scipy
+fastapi
+uvicorn
