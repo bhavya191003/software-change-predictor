@@ -129,9 +129,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-nav .logo {
   font-weight: 800;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   letter-spacing: 0.1em;
   color: #000;
+  white-space: nowrap;
 }
 
 .top-nav nav {
@@ -279,12 +280,14 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 4.5rem;
   line-height: 1.1;
   text-align: center;
-  font-weight: 800;
+  font-weight: 700;
   color: #fff;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.15em;
+  white-space: nowrap;
   z-index: 3;
   pointer-events: none;
   width: 100%;
