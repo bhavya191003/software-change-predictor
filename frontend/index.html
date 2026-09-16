@@ -16,22 +16,53 @@
 <body>
 
   <!-- Hero / Header -->
-  <header class="hero">
-    <div class="header-logo">
-      <img src="/scp_logo.jpg" alt="SCP Logo" style="width: 80px; height: auto; margin-bottom: 1rem; border-radius: 12px; box-shadow: var(--shadow-sm);">
-      <h1 class="logo-text">Software Change Predictor</h1>
-      <h2 class="logo-subtitle">Statistical Risk Analyzer</h2>
-    </div>
-    <p>Mine Git repositories and predict which files are most likely to have bugs.</p>
-    
-    <div class="input-group">
-      <input type="text" id="repoUrl" placeholder="https://github.com/owner/repo" aria-label="Repository URL">
-      <button id="analyzeBtn" class="btn-primary">Analyze</button>
-    </div>
-    
-    <div class="api-status">
-      <div id="statusDot" class="status-dot"></div>
-      <span>Backend API Connection</span>
+  <header class="crunchy-hero-container">
+    <div class="crunchy-card">
+      <div class="crunchy-left">
+        <div class="top-nav">
+          <div class="logo">SCP</div>
+          <nav>
+            <a href="#overview">features</a>
+            <a href="#predictions">predictions</a>
+            <a href="#tableBody">explorer</a>
+          </nav>
+        </div>
+        
+        <div class="content-wrapper">
+          <h1 class="main-title">PREDICT<br>SOFTWARE<br>DEFECTS</h1>
+          
+          <div class="desc-text">
+            <p>We provide deep, rich, and professional<br>statistical analysis for your projects.</p>
+            <p>Git mining, change velocity, and ML predictions - everything you<br>need to bring software reliability to life.</p>
+          </div>
+          
+          <div class="input-group">
+            <input type="text" id="repoUrl" placeholder="https://github.com/owner/repo" aria-label="Repository URL">
+            <button id="analyzeBtn" class="btn-primary">Analyze</button>
+          </div>
+          
+          <div class="api-status">
+            <div id="statusDot" class="status-dot"></div>
+            <span>Backend API Connection</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="crunchy-right">
+        <div class="blue-glow"></div>
+        <div class="glass-panes">
+          <div class="pane pane-1">
+            <span class="pane-text top-text">Deep Git<br>Mining</span>
+          </div>
+          <div class="pane pane-2"></div>
+          <div class="pane pane-3"></div>
+          <div class="pane pane-4">
+            <span class="pane-text bottom-text">Individual approach<br>to each repository</span>
+          </div>
+          <div class="pane pane-5"></div>
+        </div>
+        <div class="big-brand-text">SCP</div>
+      </div>
     </div>
   </header>
 
