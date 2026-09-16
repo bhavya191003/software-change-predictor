@@ -35,14 +35,22 @@
 
 body {
   font-family: var(--font-body);
-  background: var(--bg-main);
-  background-image: radial-gradient(circle at 15% 50%, rgba(37, 99, 235, 0.04), transparent 25%),
-                    radial-gradient(circle at 85% 30%, rgba(37, 99, 235, 0.04), transparent 25%);
+  background: linear-gradient(-45deg, #f8fafc, #e2e8f0, #f1f5f9, #ffffff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
   color: var(--text-main);
   min-height: 100vh;
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Scrollbar */
@@ -96,11 +104,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   color: var(--text-main);
 }
 .hero h1 span.highlight {
   color: var(--color-primary);
+}
+.logo-subtitle {
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
 }
 .hero p {
   font-size: 1.25rem;
@@ -430,7 +442,7 @@ footer {
   text-align: center;
   padding: 2rem;
   color: var(--text-muted);
-  margin-top: 4rem;
+  margin-top: auto;
   border-top: 1px solid var(--border-light);
   font-size: 0.875rem;
 }
