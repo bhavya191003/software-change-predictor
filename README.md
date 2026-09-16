@@ -1,6 +1,8 @@
 # 🔮 Software Change Predictor
 
 > AI-Powered Defect Risk Analysis Engine for Software Repositories
+> 
+> 🌍 **Live Demo:** [https://software-change-predictor-lflp.onrender.com/](https://software-change-predictor-lflp.onrender.com/)
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?style=for-the-badge&logo=python)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?style=for-the-badge&logo=fastapi)
