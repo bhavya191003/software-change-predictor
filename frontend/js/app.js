@@ -60,6 +60,8 @@ const state = {
 const dom = {};
 
 function cacheDOM() {
+  dom.homeView        = document.getElementById('homeView');
+  dom.backBtn         = document.getElementById('backBtn');
   dom.urlInput        = document.getElementById('repoUrl');
   dom.analyzeBtn      = document.getElementById('analyzeBtn');
   dom.statusDot       = document.getElementById('statusDot');
@@ -81,6 +83,13 @@ function cacheDOM() {
 // ── Event Binding ───────────────────────────────────────────────────
 
 function bindEvents() {
+  if (dom.backBtn) {
+    dom.backBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      dom.results.classList.remove('active');
+      dom.homeView.style.display = 'block';
+    });
+  }
   dom.analyzeBtn.addEventListener('click', handleAnalyze);
   dom.urlInput.addEventListener('keypress', e => { if (e.key === 'Enter') handleAnalyze(); });
   dom.searchInput.addEventListener('input', e => handleSearch(e.target.value));
@@ -137,7 +146,9 @@ async function handleAnalyze() {
       state.predictions = response.predictions || [];
 
       renderAll();
+      if (dom.homeView) dom.homeView.style.display = 'none';
       dom.results.classList.add('active');
+      window.scrollTo(0, 0);
       showToast(`Analysis complete! ${state.data.length} files analyzed in ${(state.summary.analysis_duration_seconds || 0).toFixed(1)}s`, 'success');
     } else {
       showToast('Analysis returned no data. Check the repository URL.', 'error');
