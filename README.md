@@ -135,11 +135,11 @@ We use a Random Forest Classifier trained on historical bug data and churn metri
 
 ## 👥 Team Members
 This project was developed by:
-- **Bhavya Sharma** — Project Lead & Backend Architecture
-- **Anshika Gupta** — Frontend Development & UI/UX Design  
-- **Rahul Verma** — ML Pipeline & Data Analysis
-- **Priya Singh** — Testing & Quality Assurance
-- **Amit Kumar** — Documentation & DevOps
+- **Anshika**
+- **Bhavya**
+- **Akshita**
+- **Harshita**
+- **Harshita**
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
