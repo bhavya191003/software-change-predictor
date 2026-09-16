@@ -306,69 +306,77 @@ h1, h2, h3, h4, h5, h6 {
 
 /* How It Works Section */
 .how-it-works-section {
-  padding: 6rem 2rem;
-  max-width: 1200px;
+  padding: 8rem 2rem;
+  background: var(--bg-main); /* Keeping consistent with background */
+}
+
+.process-container {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-.how-it-works-section h2 {
-  text-align: center;
-  font-size: 2.5rem;
+.process-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+  gap: 4rem;
+}
+
+.process-row:last-child {
+  margin-bottom: 2rem;
+}
+
+.process-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.process-text {
+  flex: 1;
+}
+
+.process-title {
+  font-size: 2.8rem;
   font-weight: 800;
-  margin-bottom: 4rem;
   color: #111;
-  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
 }
 
-.steps-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+.process-desc {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 450px;
 }
 
-.step-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  border-radius: 20px;
-  padding: 2.5rem 2rem;
-  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease, background 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.step-card:hover {
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.7);
-}
-
-.step-number {
-  font-size: 4rem;
+.process-number {
+  flex: 1;
+  text-align: center;
+  font-size: 16rem;
   font-weight: 900;
-  color: rgba(37, 99, 235, 0.1);
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  line-height: 1;
+  line-height: 0.8;
+  letter-spacing: -0.05em;
+  background: linear-gradient(135deg, #0d47ff, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0.9;
+  user-select: none;
 }
 
-.step-title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 1rem;
-  position: relative;
-  z-index: 2;
-}
-
-.step-desc {
-  font-size: 0.9rem;
-  color: #555;
-  line-height: 1.6;
-  position: relative;
-  z-index: 2;
+@media (max-width: 768px) {
+  .process-row, .process-row.reverse {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+  .process-number {
+    font-size: 10rem;
+  }
+  .process-desc {
+    margin: 0 auto;
+  }
 }
 
 /* Results Container */
