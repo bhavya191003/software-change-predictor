@@ -1,4 +1,26 @@
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-*.csv
-.DS_Store
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environment
+.env
+.venv
+env/
+venv/
+
+# Logs
+logs/
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Project specific
+output.csv

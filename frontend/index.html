@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI-Powered Defect Risk Analysis Engine — mine Git repositories and predict which files are most likely to have bugs.">
+  <title>Software Change Predictor | AI Defect Engine</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- Hero / Header -->
+  <header class="hero">
+    <h1>Software Change Predictor <br><span class="highlight">AI Defect Engine</span></h1>
+    <p>Mine Git repositories and predict which files are most likely to have bugs.</p>
+    
+    <div class="input-group">
+      <input type="text" id="repoUrl" placeholder="https://github.com/owner/repo" aria-label="Repository URL">
+      <button id="analyzeBtn" class="btn-primary">Analyze</button>
+    </div>
+    
+    <div class="api-status">
+      <div id="statusDot" class="status-dot"></div>
+      <span>Backend API Connection</span>
+    </div>
+  </header>
+
+  <!-- Loading Skeleton -->
+  <section id="loadingSkeleton" class="loading-skeleton">
+    <div class="summary-grid">
+      <div class="skeleton" style="height: 120px;"></div>
+      <div class="skeleton" style="height: 120px;"></div>
+      <div class="skeleton" style="height: 120px;"></div>
+      <div class="skeleton" style="height: 120px;"></div>
+    </div>
+    <div class="skeleton" style="height: 400px; margin-top: 2rem;"></div>
+  </section>
+
+  <!-- Results Area -->
+  <main id="resultsContainer" class="results-container">
+    
+    <!-- Summary Cards -->
+    <div class="summary-grid">
+      <div class="summary-card glass-panel">
+        <span class="card-title">Total Files Analyzed</span>
+        <span class="card-value" id="valFiles">0</span>
+      </div>
+      <div class="summary-card glass-panel">
+        <span class="card-title">High Risk Files</span>
+        <span class="card-value text-gradient" id="valHighRisk">0</span>
+      </div>
+      <div class="summary-card glass-panel">
+        <span class="card-title">Average Entropy</span>
+        <span class="card-value" id="valEntropy">0.00</span>
+      </div>
+      <div class="summary-card glass-panel">
+        <span class="card-title">Max Risk Score</span>
+        <span class="card-value" id="valMaxRisk" style="color: var(--color-critical)">0</span>
+      </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="overview">Overview</button>
+      <button class="tab-btn" data-tab="riskAnalysis">Risk Analysis</button>
+      <button class="tab-btn" data-tab="timeline">Timeline</button>
+      <button class="tab-btn" data-tab="predictions">Predictions</button>
+    </div>
+
+    <!-- Tab Contents -->
+    <div id="overview" class="tab-content active">
+      <div class="chart-grid">
+        <div class="chart-card glass-panel">
+          <h3>Top Risk Files</h3>
+          <div class="chart-container"><canvas id="riskBarChart"></canvas></div>
+        </div>
+        <div class="chart-card glass-panel">
+          <h3>Risk Distribution</h3>
+          <div class="chart-container"><canvas id="doughnutChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="riskAnalysis" class="tab-content">
+      <div class="chart-grid">
+        <div class="chart-card glass-panel">
+          <h3>Multi-metric Comparison</h3>
+          <div class="chart-container"><canvas id="radarChart"></canvas></div>
+        </div>
+        <div class="chart-card glass-panel">
+          <h3>Cumulative Risk (Pareto)</h3>
+          <div class="chart-container"><canvas id="paretoChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="timeline" class="tab-content">
+      <div class="chart-grid">
+        <div class="chart-card glass-panel">
+          <h3>Change Velocity</h3>
+          <div class="chart-container"><canvas id="velocityChart"></canvas></div>
+        </div>
+        <div class="chart-card glass-panel">
+          <h3>Complexity vs Churn</h3>
+          <div class="chart-container"><canvas id="bubbleChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="predictions" class="tab-content">
+      <div class="glass-panel" style="padding: 2rem;">
+        <h3>Machine Learning Predictions</h3>
+        <p style="color: var(--text-muted);">Future bug probability based on Random Forest model analysis of recent commit history.</p>
+        <div id="predictionsTab" style="margin-top: 1rem;">
+          <!-- Placeholder for ML predictions -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Table Section -->
+    <div class="table-section glass-panel" style="padding: 2rem;">
+      <div class="table-header">
+        <h3>File Explorer</h3>
+        <input type="text" id="searchInput" class="search-input" placeholder="Search files...">
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th data-sort="filename">File Name ↕</th>
+              <th data-sort="total_churn">Total Churn ↕</th>
+              <th data-sort="entropy">Entropy ↕</th>
+              <th data-sort="author_count">Authors ↕</th>
+              <th data-sort="risk_score">Risk Category ↕</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Populated via JS -->
+          </tbody>
+        </table>
+      </div>
+      <div style="margin-top: 2rem; text-align: right;">
+        <button id="exportBtn" class="btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Export CSV</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Toasts -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Software Change Predictor. All rights reserved.</p>
+    <p style="font-size: 0.8rem; margin-top: 0.5rem;">HTML5 &bull; CSS3 &bull; Chart.js</p>
+  </footer>
+
+  <!-- Main application entry point (imports api.js and charts.js as ES modules) -->
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
