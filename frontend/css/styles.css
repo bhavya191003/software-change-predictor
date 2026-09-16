@@ -310,6 +310,15 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--bg-main); /* Keeping consistent with background */
 }
 
+.section-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 6rem;
+  letter-spacing: -0.03em;
+}
+
 .process-container {
   max-width: 1000px;
   margin: 0 auto;
