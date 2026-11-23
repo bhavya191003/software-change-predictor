@@ -31,8 +31,8 @@ class ApplicationTests(unittest.TestCase):
 
     def test_all_forecast_files_and_recommendation_modes(self):
         app = AppTest.from_file(str(ROOT/'app.py')).run(timeout=60)
-        for file in app.selectbox[0].options:
-            app.selectbox[0].select(file)
+        for file in next(s for s in app.selectbox if s.key == "forecast_file").options:
+            next(s for s in app.selectbox if s.key == "forecast_file").select(file)
             next(b for b in app.button if b.label == 'Analyze File').click().run(timeout=60)
             self.assertFalse(app.exception)
             self.assertFalse(app.error)

@@ -11,7 +11,7 @@ python3 -m pip install -r requirements.txt
 python3 -m streamlit run app.py
 ```
 
-The supplied model and datasets allow the application to use the included snapshot immediately. Select a historical file and use **Analyze File** for the forecast. The co-change and Phase 2 sections provide related-file inspection suggestions. The dataset explorer displays the included CSVs.
+The supplied model and datasets allow the application to use the included snapshot immediately. Start with **Related files to inspect** to select a source, test or configuration file and request suggestions. The historical import section shows saved replay examples and comparisons. The separate **Baseline — historical file-change forecast** section provides **Analyze File**. The dataset explorer displays the included CSVs. The app prominently displays the historical cutoff; forecast dates are relative to that cutoff.
 
 ## Regenerate the forecast artifacts
 

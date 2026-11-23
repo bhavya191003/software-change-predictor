@@ -1,6 +1,19 @@
-# Software Change Predictor — change-prediction-only baseline
+# Software Change Predictor — related-file inspection research
 
-This project uses Git commit history to estimate whether a historically active file will be modified in a **future 30-day window**. It is a research **baseline**, not yet a validated maintenance decision system.
+This research prototype uses Flask Git history to recommend related files for developers to inspect when modifying a file. It compares temporal co-change, file-role and historical Python import evidence. A separate Random Forest baseline estimates file activity in a 30-day window after the included historical snapshot.
+
+## What the app shows
+
+1. **Related files to inspect:** choose a source, test or configuration file and request up to three suggestions using the included history.
+2. **Historical import evidence:** explore saved replay examples and evaluation results. This section does not analyze the file selected in the interactive recommender.
+3. **All-file experiment:** explore co-change suggestions across a wider file scope.
+4. **Historical forecast baseline and datasets:** inspect the forecast, snapshot cutoff and source CSVs.
+
+The app displays the cutoff derived from the supplied history (currently 30 October 2026). File paths belong to the analyzed Flask repository. The application does not monitor incoming commits or offer repository upload. Forecasting and recommendation engines operate independently.
+
+Evidence-aware precision in the saved 354-event comparison is 18.49%, versus 18.58% for temporal and 18.68% for role-aware ranking. The evidence-aware method has not established an improvement. Same-commit files are proxy labels for inspection relevance; scores do not establish required edits or defects. External validation and developer usefulness assessment remain open.
+
+See [PROJECT_GUIDE.md](PROJECT_GUIDE.md) for the complete scope and [EVIDENCE_RESULTS.md](EVIDENCE_RESULTS.md) for evaluation limitations. The following sections document the baseline and research experiments.
 
 ## Contents
 - `app.py`: Streamlit UI for file-level change prediction.

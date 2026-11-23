@@ -1,6 +1,6 @@
 # Software Change Predictor project guide
 
-This Python research prototype studies file changes using Flask Git history. It provides a Streamlit application and command-line experiments.
+This Python research prototype studies file changes using Flask Git history. It provides a Streamlit application and command-line experiments. The application starts with related-file inspection, followed by saved historical import evidence, the all-file experiment, and the separate forecast baseline. It displays the supplied history cutoff explicitly.
 
 ## Documentation
 
