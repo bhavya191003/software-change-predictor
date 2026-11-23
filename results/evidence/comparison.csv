@@ -1,0 +1,6 @@
+method,events,total_recommendations,correct_recommendations,actual_related_file_instances,precision,recall,coverage,hit_rate,false_alerts_per_event,inspections_per_event
+static_code,354,1044,172,674,0.1648,0.2552,0.9887,0.602,2.4633,2.9492
+temporal_code,354,1044,194,674,0.1858,0.2878,0.9887,0.6617,2.4011,2.9492
+role_aware_code,354,1044,195,674,0.1868,0.2893,0.9887,0.6667,2.3983,2.9492
+evidence,354,1044,193,674,0.1849,0.2864,0.9887,0.6617,2.404,2.9492
+additive_imports,354,1059,189,674,0.1785,0.2804,1.0,0.6567,2.4576,2.9915

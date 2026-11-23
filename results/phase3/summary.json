@@ -1,0 +1,109 @@
+{
+  "scope": "Exploratory test: Python seed, eligible source/test/config same-commit labels",
+  "source_history": "../flask-source-complete",
+  "dataset": "data/raw/commits.csv",
+  "test_start_unix": 1656691552.0,
+  "eligible_held_out_events": 362,
+  "sampled_events": 362,
+  "evaluated_events": 352,
+  "skipped_events": [
+    {
+      "commit": "2f1d1d625697b9eca82dc8b2f46fff24dace63b1",
+      "reason": "No previous history for seed"
+    },
+    {
+      "commit": "c757882808a7e4e29636e433463435a7eed5b952",
+      "reason": "Seed absent from event parent (newly added or renamed)"
+    },
+    {
+      "commit": "69f9845ef2da3051d74d4dade3e88ccf5b2ee3de",
+      "reason": "No previous history for seed"
+    },
+    {
+      "commit": "3a35977d5fbcc424688d32154d250bc0bae918d6",
+      "reason": "No previous history for seed"
+    },
+    {
+      "commit": "3f195248dcd59f8eb08e282b7980dc04b97d7391",
+      "reason": "No previous history for seed"
+    },
+    {
+      "commit": "d5527264f0506504fd2fd400192c8f696ce6d979",
+      "reason": "Seed absent from event parent (newly added or renamed)"
+    },
+    {
+      "commit": "a64588f87a2bd7ba557814ec039e3b2af2ce842d",
+      "reason": "No previous history for seed"
+    },
+    {
+      "commit": "1d8b53f782570b56296d7682cbbf104b6737e805",
+      "reason": "Seed absent from event parent (newly added or renamed)"
+    },
+    {
+      "commit": "a20bcff8dc4e263312cfd74c11e432bfe8c194c1",
+      "reason": "Seed absent from event parent (newly added or renamed)"
+    },
+    {
+      "commit": "3d03098a97ddc6a908aa4a50c2ef7381f8297d0a",
+      "reason": "No previous history for seed"
+    }
+  ],
+  "top_k": 3,
+  "candidate_pool": 15,
+  "dependency_bonus_fixed_in_advance": 0.2,
+  "methods": [
+    "temporal_code",
+    "role_aware_code",
+    "history_plus_imports"
+  ],
+  "reports": [
+    {
+      "method": "temporal_code",
+      "events": 352,
+      "total_recommendations": 1044,
+      "correct_recommendations": 194,
+      "actual_related_file_instances": 673,
+      "precision": 0.1858,
+      "recall": 0.2883,
+      "coverage": 0.9943,
+      "hit_rate": 0.665,
+      "false_alerts_per_event": 2.4148,
+      "inspections_per_event": 2.9659
+    },
+    {
+      "method": "role_aware_code",
+      "events": 352,
+      "total_recommendations": 1044,
+      "correct_recommendations": 195,
+      "actual_related_file_instances": 673,
+      "precision": 0.1868,
+      "recall": 0.2897,
+      "coverage": 0.9943,
+      "hit_rate": 0.67,
+      "false_alerts_per_event": 2.4119,
+      "inspections_per_event": 2.9659
+    },
+    {
+      "method": "history_plus_imports",
+      "events": 352,
+      "total_recommendations": 1055,
+      "correct_recommendations": 189,
+      "actual_related_file_instances": 673,
+      "precision": 0.1791,
+      "recall": 0.2808,
+      "coverage": 1.0,
+      "hit_rate": 0.66,
+      "false_alerts_per_event": 2.4602,
+      "inspections_per_event": 2.9972
+    }
+  ],
+  "caveats": [
+    "Same-commit co-change is a weak proxy for inspection relevance.",
+    "The source tree for each event is the event parent, not the present-day repository.",
+    "Static imports miss dynamic/call-level dependencies and may give false links.",
+    "Reverse imports are checked only inside a limited candidate pool.",
+    "Sampling Python-seed events limits generalizability.",
+    "A single repository, a small pilot and an arbitrary fixed bonus do not establish novelty.",
+    "This top-k comparison is ungated and cannot be directly compared with earlier gated scores."
+  ]
+}

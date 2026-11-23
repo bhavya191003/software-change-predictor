@@ -1,0 +1,276 @@
+[
+  {
+    "known_file": ".github/workflows/tests.yaml",
+    "other_same_commit_code_files": [],
+    "recommended": [
+      {
+        "file": "tox.ini",
+        "historical_pair_commits": 16,
+        "historical_seed_commits": 34,
+        "time_weighted_pair_support": 7.818,
+        "historical_confidence": 0.4706,
+        "temporal_confidence": 0.467,
+        "selective_score": 0.33217,
+        "score": 0.40162067025858494,
+        "method": "role_aware_code",
+        "role": "config",
+        "reason": "16 earlier joint commits; candidate role: config; same file role"
+      }
+    ]
+  },
+  {
+    "known_file": ".github/workflows/tests.yaml",
+    "other_same_commit_code_files": [],
+    "recommended": [
+      {
+        "file": "tox.ini",
+        "historical_pair_commits": 16,
+        "historical_seed_commits": 35,
+        "time_weighted_pair_support": 7.818,
+        "historical_confidence": 0.4571,
+        "temporal_confidence": 0.4407,
+        "selective_score": 0.31534,
+        "score": 0.3789985751519871,
+        "method": "role_aware_code",
+        "role": "config",
+        "reason": "16 earlier joint commits; candidate role: config; same file role"
+      }
+    ]
+  },
+  {
+    "known_file": "src/flask/scaffold.py",
+    "other_same_commit_code_files": [
+      "src/flask/app.py",
+      "src/flask/ctx.py",
+      "src/flask/testing.py",
+      "tests/test_basic.py",
+      "tests/test_signals.py",
+      "tests/test_testing.py"
+    ],
+    "recommended": [
+      {
+        "file": "src/flask/blueprints.py",
+        "historical_pair_commits": 35,
+        "historical_seed_commits": 59,
+        "time_weighted_pair_support": 21.868,
+        "historical_confidence": 0.5932,
+        "temporal_confidence": 0.5891,
+        "selective_score": 0.51215,
+        "score": 0.6476853864594609,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "35 earlier joint commits; candidate role: source; same directory, same file role"
+      },
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 36,
+        "historical_seed_commits": 59,
+        "time_weighted_pair_support": 21.824,
+        "historical_confidence": 0.6102,
+        "temporal_confidence": 0.5879,
+        "selective_score": 0.51102,
+        "score": 0.6462562157732215,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "36 earlier joint commits; candidate role: source; same directory, same file role"
+      }
+    ]
+  },
+  {
+    "known_file": "src/flask/app.py",
+    "other_same_commit_code_files": [
+      "src/flask/ctx.py",
+      "src/flask/scaffold.py",
+      "src/flask/testing.py",
+      "tests/test_basic.py",
+      "tests/test_signals.py",
+      "tests/test_testing.py"
+    ],
+    "recommended": [
+      {
+        "file": "src/flask/blueprints.py",
+        "historical_pair_commits": 41,
+        "historical_seed_commits": 127,
+        "time_weighted_pair_support": 24.726,
+        "historical_confidence": 0.3228,
+        "temporal_confidence": 0.3682,
+        "selective_score": 0.33082,
+        "score": 0.4087752817752193,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "41 earlier joint commits; candidate role: source; same directory, same file role"
+      },
+      {
+        "file": "src/flask/scaffold.py",
+        "historical_pair_commits": 37,
+        "historical_seed_commits": 127,
+        "time_weighted_pair_support": 22.823,
+        "historical_confidence": 0.2913,
+        "temporal_confidence": 0.3399,
+        "selective_score": 0.30347,
+        "score": 0.37501719266426503,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "37 earlier joint commits; candidate role: source; same directory, same file role"
+      }
+    ]
+  },
+  {
+    "known_file": "src/flask/ctx.py",
+    "other_same_commit_code_files": [],
+    "recommended": [
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 13,
+        "historical_seed_commits": 37,
+        "time_weighted_pair_support": 8.388,
+        "historical_confidence": 0.3514,
+        "temporal_confidence": 0.4368,
+        "selective_score": 0.31945,
+        "score": 0.4232472528082739,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "13 earlier joint commits; candidate role: source; same directory, same file role"
+      },
+      {
+        "file": "src/flask/scaffold.py",
+        "historical_pair_commits": 9,
+        "historical_seed_commits": 37,
+        "time_weighted_pair_support": 7.486,
+        "historical_confidence": 0.2432,
+        "temporal_confidence": 0.3898,
+        "selective_score": 0.27861,
+        "score": 0.3691357801019867,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "9 earlier joint commits; candidate role: source; same directory, same file role"
+      }
+    ]
+  },
+  {
+    "known_file": "src/flask/helpers.py",
+    "other_same_commit_code_files": [],
+    "recommended": [
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 37,
+        "historical_seed_commits": 84,
+        "time_weighted_pair_support": 19.892,
+        "historical_confidence": 0.4405,
+        "temporal_confidence": 0.4834,
+        "selective_score": 0.4189,
+        "score": 0.527084493032989,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "37 earlier joint commits; candidate role: source; same directory, same file role"
+      }
+    ]
+  },
+  {
+    "known_file": "src/flask/ctx.py",
+    "other_same_commit_code_files": [
+      "src/flask/helpers.py"
+    ],
+    "recommended": [
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 13,
+        "historical_seed_commits": 38,
+        "time_weighted_pair_support": 8.388,
+        "historical_confidence": 0.3421,
+        "temporal_confidence": 0.4152,
+        "selective_score": 0.30506,
+        "score": 0.4023143689730657,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "13 earlier joint commits; candidate role: source; same directory, same file role"
+      },
+      {
+        "file": "src/flask/scaffold.py",
+        "historical_pair_commits": 9,
+        "historical_seed_commits": 38,
+        "time_weighted_pair_support": 7.485,
+        "historical_confidence": 0.2368,
+        "temporal_confidence": 0.3705,
+        "selective_score": 0.26606,
+        "score": 0.3508559822164197,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "9 earlier joint commits; candidate role: source; same directory, same file role"
+      }
+    ]
+  },
+  {
+    "known_file": "tests/test_cli.py",
+    "other_same_commit_code_files": [],
+    "recommended": [
+      {
+        "file": "src/flask/cli.py",
+        "historical_pair_commits": 34,
+        "historical_seed_commits": 122,
+        "time_weighted_pair_support": 19.389,
+        "historical_confidence": 0.2787,
+        "temporal_confidence": 0.5982,
+        "selective_score": 0.51072,
+        "score": 0.6507178293029635,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "34 earlier joint commits; candidate role: source; matching test/source filename"
+      }
+    ]
+  },
+  {
+    "known_file": "tests/test_cli.py",
+    "other_same_commit_code_files": [],
+    "recommended": [
+      {
+        "file": "src/flask/cli.py",
+        "historical_pair_commits": 34,
+        "historical_seed_commits": 123,
+        "time_weighted_pair_support": 19.389,
+        "historical_confidence": 0.2764,
+        "temporal_confidence": 0.5803,
+        "selective_score": 0.4963,
+        "score": 0.6312462433892557,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "34 earlier joint commits; candidate role: source; matching test/source filename"
+      }
+    ]
+  },
+  {
+    "known_file": "src/flask/app.py",
+    "other_same_commit_code_files": [
+      "src/flask/typing.py",
+      "tests/test_basic.py"
+    ],
+    "recommended": [
+      {
+        "file": "src/flask/blueprints.py",
+        "historical_pair_commits": 41,
+        "historical_seed_commits": 128,
+        "time_weighted_pair_support": 24.661,
+        "historical_confidence": 0.3203,
+        "temporal_confidence": 0.3628,
+        "selective_score": 0.32602,
+        "score": 0.4027011700955812,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "41 earlier joint commits; candidate role: source; same directory, same file role"
+      },
+      {
+        "file": "src/flask/scaffold.py",
+        "historical_pair_commits": 38,
+        "historical_seed_commits": 128,
+        "time_weighted_pair_support": 23.761,
+        "historical_confidence": 0.2969,
+        "temporal_confidence": 0.3496,
+        "selective_score": 0.31323,
+        "score": 0.38694968575244837,
+        "method": "role_aware_code",
+        "role": "source",
+        "reason": "38 earlier joint commits; candidate role: source; same directory, same file role"
+      }
+    ]
+  }
+]

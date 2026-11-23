@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-21",
+  "python": "3.9.6",
+  "automated_tests": 26,
+  "forecast_files_exercised": 24,
+  "stored_recommendation_seeds_exercised": 642,
+  "recommendation_methods_per_seed": 8,
+  "ui_recommendation_modes_exercised": 7,
+  "collected_file_change_records": 17196,
+  "collected_commits": 5549,
+  "training_rows": 10953,
+  "test_rows": 1495,
+  "retrained_model_roc_auc": 0.6344081248318536,
+  "processed_datasets_reproduced": [
+    "features.csv",
+    "training_dataset.csv"
+  ],
+  "comparison_tables_reproduced": [
+    "cochange",
+    "context",
+    "phase3",
+    "evidence"
+  ],
+  "additional_scripts_verified": [
+    "extract_historical_dependencies.py",
+    "phase3_dependency_demo.py",
+    "broken_ripple.py"
+  ],
+  "limitations": [
+    "Additional GitHub histories unavailable because DNS resolution failed.",
+    "Browser connector unavailable and native Chrome inspection timed out.",
+    "Port 8501 is listening, but HTTP requests from the execution environment failed.",
+    "Clean-environment installation remains unverified."
+  ]
+}

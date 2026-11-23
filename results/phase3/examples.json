@@ -1,0 +1,628 @@
+[
+  {
+    "commit": "84c722044ad03f7f5384f5314c8350b3a13d8dfa",
+    "seed": "src/flask/scaffold.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/ctx.py",
+      "src/flask/testing.py",
+      "tests/test_basic.py",
+      "tests/test_signals.py",
+      "tests/test_testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/blueprints.py",
+        "src/flask/app.py",
+        "src/flask/typing.py"
+      ],
+      "role_aware_code": [
+        "src/flask/blueprints.py",
+        "src/flask/app.py",
+        "src/flask/typing.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/blueprints.py",
+        "src/flask/app.py",
+        "src/flask/typing.py"
+      ]
+    }
+  },
+  {
+    "commit": "6916697a982df775a66a1ac9971985e5fa213f2b",
+    "seed": "src/flask/app.py",
+    "targets": [
+      "src/flask/ctx.py",
+      "src/flask/scaffold.py",
+      "src/flask/testing.py",
+      "tests/test_basic.py",
+      "tests/test_signals.py",
+      "tests/test_testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ]
+    }
+  },
+  {
+    "commit": "9e686d93b69f0e73f801cc11a57839f4dfe2ca1a",
+    "seed": "src/flask/ctx.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/testing.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/testing.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/typing.py",
+        "src/flask/scaffold.py"
+      ]
+    }
+  },
+  {
+    "commit": "c2810ffdd2f2becbc37d35f63b69034b8b9ed5b8",
+    "seed": "src/flask/helpers.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/blueprints.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/blueprints.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "tests/test_helpers.py"
+      ]
+    }
+  },
+  {
+    "commit": "c99f07d3e4b463174d1b25cc813e2df76c182773",
+    "seed": "src/flask/ctx.py",
+    "targets": [
+      "src/flask/helpers.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/testing.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/testing.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/typing.py",
+        "src/flask/scaffold.py"
+      ]
+    }
+  },
+  {
+    "commit": "ab6a8b0330845c80d661a748314691302ea7d8f7",
+    "seed": "tests/test_cli.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/cli.py",
+        "src/flask/app.py",
+        "tests/test_basic.py"
+      ],
+      "role_aware_code": [
+        "src/flask/cli.py",
+        "tests/test_basic.py",
+        "src/flask/app.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/cli.py",
+        "src/flask/__init__.py",
+        "src/flask/app.py"
+      ]
+    }
+  },
+  {
+    "commit": "1626aff602e3316642e69927333041370095c321",
+    "seed": "tests/test_cli.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/cli.py",
+        "src/flask/app.py",
+        "tests/test_basic.py"
+      ],
+      "role_aware_code": [
+        "src/flask/cli.py",
+        "tests/test_basic.py",
+        "src/flask/app.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/cli.py",
+        "src/flask/__init__.py",
+        "src/flask/app.py"
+      ]
+    }
+  },
+  {
+    "commit": "ca2bfbb0ac66fbbeeedbf6bbe317bee45cb23d29",
+    "seed": "src/flask/app.py",
+    "targets": [
+      "src/flask/typing.py",
+      "tests/test_basic.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ]
+    }
+  },
+  {
+    "commit": "60b845ebabeb77e401186f4b83de21d3f9c6a9d7",
+    "seed": "src/flask/typing.py",
+    "targets": [
+      "tests/typing/typing_route.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ]
+    }
+  },
+  {
+    "commit": "f8cb0b0dd5ea30729db6b131aeeb30915ea4860b",
+    "seed": "src/flask/app.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ]
+    }
+  },
+  {
+    "commit": "559a8458c4187b3cc12b1ea5a92a393c7fbdc765",
+    "seed": "tests/typing/typing_route.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/typing.py",
+      "tests/test_basic.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/typing.py",
+        "src/flask/app.py",
+        "src/flask/blueprints.py"
+      ],
+      "role_aware_code": [
+        "src/flask/typing.py",
+        "src/flask/app.py",
+        "src/flask/blueprints.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/typing.py",
+        "src/flask/app.py",
+        "src/flask/blueprints.py"
+      ]
+    }
+  },
+  {
+    "commit": "9dfcb90c92e13f2d92cb723cb834b5e0d666a2f5",
+    "seed": "src/flask/json/__init__.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "src/flask/blueprints.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "src/flask/blueprints.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "tests/test_json.py",
+        "src/flask/globals.py"
+      ]
+    }
+  },
+  {
+    "commit": "cafe68e1edb8902f2dab977af9d848928ce1ecc6",
+    "seed": "src/flask/json/__init__.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "src/flask/blueprints.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "src/flask/blueprints.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "tests/test_json.py",
+        "src/flask/globals.py"
+      ]
+    }
+  },
+  {
+    "commit": "9b44bf2818d8e3cde422ad7f43fb33dfc6737289",
+    "seed": "src/flask/views.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/blueprints.py",
+      "src/flask/scaffold.py",
+      "src/flask/typing.py",
+      "tests/typing/typing_route.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/typing.py",
+        "src/flask/app.py",
+        "src/flask/blueprints.py"
+      ]
+    }
+  },
+  {
+    "commit": "0b2f809f9b56861dae3ae5154d73b4afaf632a0a",
+    "seed": "src/flask/globals.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/sessions.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/sessions.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/sessions.py"
+      ]
+    }
+  },
+  {
+    "commit": "82c2e0366ce6b74a3786a64631ce58b85b3a7d4e",
+    "seed": "tests/test_appctx.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/cli.py",
+      "src/flask/ctx.py",
+      "src/flask/debughelpers.py",
+      "src/flask/helpers.py",
+      "src/flask/templating.py",
+      "src/flask/testing.py",
+      "tests/conftest.py",
+      "tests/test_basic.py",
+      "tests/test_reqctx.py",
+      "tests/test_session_interface.py",
+      "tests/test_testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "tests/test_basic.py",
+        "tests/test_config.py",
+        "tests/test_cli.py"
+      ],
+      "role_aware_code": [
+        "tests/test_basic.py",
+        "tests/test_config.py",
+        "tests/test_cli.py"
+      ],
+      "history_plus_imports": [
+        "tests/test_basic.py",
+        "tests/test_config.py",
+        "tests/test_cli.py"
+      ]
+    }
+  },
+  {
+    "commit": "89463cb77c7f3830c308cdfcc250255fd7377d01",
+    "seed": "setup.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "tox.ini",
+        "src/flask/__init__.py",
+        "src/flask/cli.py"
+      ],
+      "role_aware_code": [
+        "tox.ini",
+        "src/flask/__init__.py",
+        "src/flask/cli.py"
+      ],
+      "history_plus_imports": [
+        "tox.ini",
+        "src/flask/__init__.py",
+        "src/flask/cli.py"
+      ]
+    }
+  },
+  {
+    "commit": "d597db67ded68d4aedf42b9d1d4570573fb79cd6",
+    "seed": "src/flask/globals.py",
+    "targets": [
+      "src/flask/__init__.py",
+      "src/flask/ctx.py",
+      "src/flask/testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/sessions.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/sessions.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/sessions.py"
+      ]
+    }
+  },
+  {
+    "commit": "e0dad454810dd081947d3ca2ff376c5096185698",
+    "seed": "src/flask/app.py",
+    "targets": [
+      "src/flask/ctx.py",
+      "src/flask/scaffold.py",
+      "src/flask/testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py",
+        "src/flask/helpers.py"
+      ]
+    }
+  },
+  {
+    "commit": "91044c4d769efa7f20455e1b70457a7da95c26d8",
+    "seed": "src/flask/helpers.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/ctx.py",
+      "src/flask/globals.py",
+      "src/flask/templating.py",
+      "src/flask/testing.py",
+      "tests/test_testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/blueprints.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "src/flask/blueprints.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/scaffold.py",
+        "tests/test_helpers.py"
+      ]
+    }
+  },
+  {
+    "commit": "5775d1e9b1a031c7bc3bf1463acb3289594ab3e4",
+    "seed": "src/flask/ctx.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/globals.py",
+      "src/flask/helpers.py",
+      "src/flask/templating.py",
+      "src/flask/testing.py",
+      "tests/test_testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/testing.py",
+        "src/flask/scaffold.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/testing.py",
+        "src/flask/scaffold.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/globals.py",
+        "src/flask/testing.py"
+      ]
+    }
+  },
+  {
+    "commit": "67310ab49613be97a121053dfbbced14657b96eb",
+    "seed": "src/flask/json/__init__.py",
+    "targets": [
+      "src/flask/app.py",
+      "src/flask/blueprints.py",
+      "src/flask/ctx.py",
+      "src/flask/json/provider.py",
+      "src/flask/scaffold.py",
+      "src/flask/testing.py",
+      "tests/test_basic.py",
+      "tests/test_json.py",
+      "tests/test_testing.py"
+    ],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/blueprints.py",
+        "src/flask/scaffold.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "tests/test_json.py",
+        "src/flask/testing.py"
+      ]
+    }
+  },
+  {
+    "commit": "58f3536a8f5dfc18e559c518ae38cba52bec90a9",
+    "seed": "src/flask/templating.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/globals.py",
+        "src/flask/ctx.py"
+      ]
+    }
+  },
+  {
+    "commit": "a7859c6947ffc3e74007c23646cf74518230f0fb",
+    "seed": "src/flask/templating.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/ctx.py",
+        "src/flask/helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/globals.py",
+        "src/flask/ctx.py"
+      ]
+    }
+  },
+  {
+    "commit": "134aebe60115716b962a95a0dd31bf72c5417941",
+    "seed": "src/flask/__init__.py",
+    "targets": [],
+    "predictions": {
+      "temporal_code": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "tests/test_helpers.py"
+      ],
+      "role_aware_code": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "tests/test_helpers.py"
+      ],
+      "history_plus_imports": [
+        "src/flask/app.py",
+        "src/flask/helpers.py",
+        "tests/test_helpers.py"
+      ]
+    }
+  }
+]

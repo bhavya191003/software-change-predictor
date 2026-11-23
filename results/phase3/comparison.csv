@@ -1,0 +1,4 @@
+method,events,total_recommendations,correct_recommendations,actual_related_file_instances,precision,recall,coverage,hit_rate,false_alerts_per_event,inspections_per_event
+temporal_code,352,1044,194,673,0.1858,0.2883,0.9943,0.665,2.4148,2.9659
+role_aware_code,352,1044,195,673,0.1868,0.2897,0.9943,0.67,2.4119,2.9659
+history_plus_imports,352,1055,189,673,0.1791,0.2808,1.0,0.66,2.4602,2.9972

@@ -1,0 +1,365 @@
+{
+  "dataset": "data/raw/commits.csv",
+  "dataset_sha256": "59479da494e0a95e2eee4d3d2a1bd1dede53f0f7b40781934678b71d2ac5d14a",
+  "repository": "../flask-source-complete",
+  "top_k": 3,
+  "validation_events": 382,
+  "test_events": 354,
+  "selected_import_weight": 1.0,
+  "tuning": [
+    {
+      "weight": 0.0,
+      "f05": 0.2130705235348035,
+      "method": "evidence",
+      "events": 382,
+      "total_recommendations": 1111,
+      "correct_recommendations": 211,
+      "actual_related_file_instances": 507,
+      "precision": 0.1899,
+      "recall": 0.4162,
+      "coverage": 0.9738,
+      "hit_rate": 0.7062,
+      "false_alerts_per_event": 2.356,
+      "inspections_per_event": 2.9084
+    },
+    {
+      "weight": 0.1,
+      "f05": 0.2150877891138294,
+      "method": "evidence",
+      "events": 382,
+      "total_recommendations": 1111,
+      "correct_recommendations": 213,
+      "actual_related_file_instances": 507,
+      "precision": 0.1917,
+      "recall": 0.4201,
+      "coverage": 0.9738,
+      "hit_rate": 0.7109,
+      "false_alerts_per_event": 2.3508,
+      "inspections_per_event": 2.9084
+    },
+    {
+      "weight": 0.25,
+      "f05": 0.21609904306220096,
+      "method": "evidence",
+      "events": 382,
+      "total_recommendations": 1111,
+      "correct_recommendations": 214,
+      "actual_related_file_instances": 507,
+      "precision": 0.1926,
+      "recall": 0.4221,
+      "coverage": 0.9738,
+      "hit_rate": 0.7156,
+      "false_alerts_per_event": 2.3482,
+      "inspections_per_event": 2.9084
+    },
+    {
+      "weight": 0.5,
+      "f05": 0.21609904306220096,
+      "method": "evidence",
+      "events": 382,
+      "total_recommendations": 1111,
+      "correct_recommendations": 214,
+      "actual_related_file_instances": 507,
+      "precision": 0.1926,
+      "recall": 0.4221,
+      "coverage": 0.9738,
+      "hit_rate": 0.7156,
+      "false_alerts_per_event": 2.3482,
+      "inspections_per_event": 2.9084
+    },
+    {
+      "weight": 1.0,
+      "f05": 0.21711029684110272,
+      "method": "evidence",
+      "events": 382,
+      "total_recommendations": 1111,
+      "correct_recommendations": 215,
+      "actual_related_file_instances": 507,
+      "precision": 0.1935,
+      "recall": 0.4241,
+      "coverage": 0.9738,
+      "hit_rate": 0.7156,
+      "false_alerts_per_event": 2.3455,
+      "inspections_per_event": 2.9084
+    },
+    {
+      "weight": 2.0,
+      "f05": 0.2150877891138294,
+      "method": "evidence",
+      "events": 382,
+      "total_recommendations": 1111,
+      "correct_recommendations": 213,
+      "actual_related_file_instances": 507,
+      "precision": 0.1917,
+      "recall": 0.4201,
+      "coverage": 0.9738,
+      "hit_rate": 0.7014,
+      "false_alerts_per_event": 2.3508,
+      "inspections_per_event": 2.9084
+    }
+  ],
+  "reports": [
+    {
+      "method": "static_code",
+      "events": 354,
+      "total_recommendations": 1044,
+      "correct_recommendations": 172,
+      "actual_related_file_instances": 674,
+      "precision": 0.1648,
+      "recall": 0.2552,
+      "coverage": 0.9887,
+      "hit_rate": 0.602,
+      "false_alerts_per_event": 2.4633,
+      "inspections_per_event": 2.9492
+    },
+    {
+      "method": "temporal_code",
+      "events": 354,
+      "total_recommendations": 1044,
+      "correct_recommendations": 194,
+      "actual_related_file_instances": 674,
+      "precision": 0.1858,
+      "recall": 0.2878,
+      "coverage": 0.9887,
+      "hit_rate": 0.6617,
+      "false_alerts_per_event": 2.4011,
+      "inspections_per_event": 2.9492
+    },
+    {
+      "method": "role_aware_code",
+      "events": 354,
+      "total_recommendations": 1044,
+      "correct_recommendations": 195,
+      "actual_related_file_instances": 674,
+      "precision": 0.1868,
+      "recall": 0.2893,
+      "coverage": 0.9887,
+      "hit_rate": 0.6667,
+      "false_alerts_per_event": 2.3983,
+      "inspections_per_event": 2.9492
+    },
+    {
+      "method": "evidence",
+      "events": 354,
+      "total_recommendations": 1044,
+      "correct_recommendations": 193,
+      "actual_related_file_instances": 674,
+      "precision": 0.1849,
+      "recall": 0.2864,
+      "coverage": 0.9887,
+      "hit_rate": 0.6617,
+      "false_alerts_per_event": 2.404,
+      "inspections_per_event": 2.9492
+    },
+    {
+      "method": "additive_imports",
+      "events": 354,
+      "total_recommendations": 1059,
+      "correct_recommendations": 189,
+      "actual_related_file_instances": 674,
+      "precision": 0.1785,
+      "recall": 0.2804,
+      "coverage": 1.0,
+      "hit_rate": 0.6567,
+      "false_alerts_per_event": 2.4576,
+      "inspections_per_event": 2.9915
+    }
+  ],
+  "diagnostics": {
+    "additive_imports": {
+      "added_hits": 21,
+      "added_misses": 204,
+      "removed_hits": 26,
+      "events_helped": 12,
+      "events_harmed": 15
+    },
+    "evidence": {
+      "added_hits": 15,
+      "added_misses": 127,
+      "removed_hits": 16,
+      "events_helped": 9,
+      "events_harmed": 10
+    }
+  },
+  "skipped": [
+    {
+      "commit": "632f85b65354ad573bb33c54a0a9dd3ffcef371f",
+      "phase": "validation",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "8ad9b41850a2d2d74d7702474d13e06e702256af",
+      "phase": "validation",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "fdf5d11b515aa2d0937ccc31ef7f20b94d3a8794",
+      "phase": "validation",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "8c6f1d96ded2a22429b1ee7da6c3870cb140b587",
+      "phase": "validation",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "2f1d1d625697b9eca82dc8b2f46fff24dace63b1",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "c757882808a7e4e29636e433463435a7eed5b952",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "69f9845ef2da3051d74d4dade3e88ccf5b2ee3de",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "3f195248dcd59f8eb08e282b7980dc04b97d7391",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "d5527264f0506504fd2fd400192c8f696ce6d979",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "a64588f87a2bd7ba557814ec039e3b2af2ce842d",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "1d8b53f782570b56296d7682cbbf104b6737e805",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    },
+    {
+      "commit": "a20bcff8dc4e263312cfd74c11e432bfe8c194c1",
+      "phase": "test",
+      "reason": "Seed absent from parent"
+    }
+  ],
+  "unreachable_target_instances": 18,
+  "intervals": {
+    "static_code": {
+      "precision_recall_95_interval": [
+        [
+          0.13915484436284736,
+          0.22237765024709072
+        ],
+        [
+          0.19216891609633466,
+          0.2957002424625764
+        ]
+      ],
+      "delta_vs_temporal_95_interval": [
+        [
+          -0.033817242732598896,
+          -0.0529816821811945
+        ],
+        [
+          -0.008587786259541985,
+          -0.013411820196951637
+        ]
+      ]
+    },
+    "temporal_code": {
+      "precision_recall_95_interval": [
+        [
+          0.1582421807617232,
+          0.2506522906469595
+        ],
+        [
+          0.21490150086069876,
+          0.3322868029469439
+        ]
+      ],
+      "delta_vs_temporal_95_interval": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "role_aware_code": {
+      "precision_recall_95_interval": [
+        [
+          0.1591954469108902,
+          0.25096963403911
+        ],
+        [
+          0.2157053011879893,
+          0.3343809301861038
+        ]
+      ],
+      "delta_vs_temporal_95_interval": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.002898550724637656,
+          0.004952150733467991
+        ]
+      ]
+    },
+    "evidence": {
+      "precision_recall_95_interval": [
+        [
+          0.15714285714285714,
+          0.24966772143251412
+        ],
+        [
+          0.21462945139557266,
+          0.33086009363462193
+        ]
+      ],
+      "delta_vs_temporal_95_interval": [
+        [
+          -0.008596193987738811,
+          -0.013551056026864634
+        ],
+        [
+          0.007633587786259528,
+          0.011334691591516044
+        ]
+      ]
+    },
+    "additive_imports": {
+      "precision_recall_95_interval": [
+        [
+          0.1510729864151429,
+          0.2442378929535441
+        ],
+        [
+          0.20794442665960833,
+          0.32342844222250705
+        ]
+      ],
+      "delta_vs_temporal_95_interval": [
+        [
+          -0.018187542017238177,
+          -0.02417209753992228
+        ],
+        [
+          0.003212787833934893,
+          0.008897924169057728
+        ]
+      ]
+    }
+  },
+  "caveats": [
+    "One repository; previously inspected test data makes this exploratory.",
+    "Event bootstrap assumes independent events and omits temporal dependence.",
+    "Same-commit labels are a proxy for inspection relevance.",
+    "All historical neighbors are eligible; candidate scope differs from Phase 3 pool 15."
+  ]
+}

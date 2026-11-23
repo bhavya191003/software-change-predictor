@@ -1,0 +1,330 @@
+[
+  {
+    "commit_id": "2589328485f51ad17afda682dd84a83da4e4e38e",
+    "known_file": ".github/workflows/tests.yaml",
+    "actual_other_files": [],
+    "recommendations": [
+      {
+        "file": "tox.ini",
+        "historical_pair_commits": 16,
+        "historical_seed_commits": 34,
+        "time_weighted_pair_support": 7.818,
+        "historical_confidence": 0.4706,
+        "temporal_confidence": 0.467,
+        "selective_score": 0.33217,
+        "score": 0.33217,
+        "method": "selective_temporal",
+        "reason": "Changed together in 16 earlier commits; 34 earlier commits touched .github/workflows/tests.yaml"
+      }
+    ]
+  },
+  {
+    "commit_id": "57a95e82b7194f1809ac9f626140ab1e497e121f",
+    "known_file": ".github/workflows/tests.yaml",
+    "actual_other_files": [],
+    "recommendations": [
+      {
+        "file": "tox.ini",
+        "historical_pair_commits": 16,
+        "historical_seed_commits": 35,
+        "time_weighted_pair_support": 7.818,
+        "historical_confidence": 0.4571,
+        "temporal_confidence": 0.4407,
+        "selective_score": 0.31534,
+        "score": 0.31534,
+        "method": "selective_temporal",
+        "reason": "Changed together in 16 earlier commits; 35 earlier commits touched .github/workflows/tests.yaml"
+      }
+    ]
+  },
+  {
+    "commit_id": "84c722044ad03f7f5384f5314c8350b3a13d8dfa",
+    "known_file": "src/flask/testing.py",
+    "actual_other_files": [
+      "CHANGES.rst",
+      "docs/config.rst",
+      "docs/reqcontext.rst",
+      "src/flask/app.py",
+      "src/flask/ctx.py",
+      "src/flask/scaffold.py",
+      "tests/test_basic.py",
+      "tests/test_signals.py",
+      "tests/test_testing.py"
+    ],
+    "recommendations": [
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 12,
+        "historical_seed_commits": 20,
+        "time_weighted_pair_support": 7.584,
+        "historical_confidence": 0.6,
+        "temporal_confidence": 0.7073,
+        "selective_score": 0.47174,
+        "score": 0.47174,
+        "method": "selective_temporal",
+        "reason": "Changed together in 12 earlier commits; 20 earlier commits touched src/flask/testing.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "6916697a982df775a66a1ac9971985e5fa213f2b",
+    "known_file": "tests/test_basic.py",
+    "actual_other_files": [
+      "CHANGES.rst",
+      "docs/config.rst",
+      "docs/reqcontext.rst",
+      "src/flask/app.py",
+      "src/flask/ctx.py",
+      "src/flask/scaffold.py",
+      "src/flask/testing.py",
+      "tests/test_signals.py",
+      "tests/test_testing.py"
+    ],
+    "recommendations": [
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 52,
+        "historical_seed_commits": 172,
+        "time_weighted_pair_support": 19.017,
+        "historical_confidence": 0.3023,
+        "temporal_confidence": 0.5954,
+        "selective_score": 0.50702,
+        "score": 0.50702,
+        "method": "selective_temporal",
+        "reason": "Changed together in 52 earlier commits; 172 earlier commits touched tests/test_basic.py"
+      },
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 18,
+        "historical_seed_commits": 172,
+        "time_weighted_pair_support": 10.189,
+        "historical_confidence": 0.1047,
+        "temporal_confidence": 0.319,
+        "selective_score": 0.25095,
+        "score": 0.25095,
+        "method": "selective_temporal",
+        "reason": "Changed together in 18 earlier commits; 172 earlier commits touched tests/test_basic.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "c2810ffdd2f2becbc37d35f63b69034b8b9ed5b8",
+    "known_file": "src/flask/helpers.py",
+    "actual_other_files": [
+      "CHANGES.rst"
+    ],
+    "recommendations": [
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 46,
+        "historical_seed_commits": 84,
+        "time_weighted_pair_support": 21.361,
+        "historical_confidence": 0.5476,
+        "temporal_confidence": 0.5191,
+        "selective_score": 0.45269,
+        "score": 0.45269,
+        "method": "selective_temporal",
+        "reason": "Changed together in 46 earlier commits; 84 earlier commits touched src/flask/helpers.py"
+      },
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 37,
+        "historical_seed_commits": 84,
+        "time_weighted_pair_support": 19.892,
+        "historical_confidence": 0.4405,
+        "temporal_confidence": 0.4834,
+        "selective_score": 0.4189,
+        "score": 0.4189,
+        "method": "selective_temporal",
+        "reason": "Changed together in 37 earlier commits; 84 earlier commits touched src/flask/helpers.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "c99f07d3e4b463174d1b25cc813e2df76c182773",
+    "known_file": "src/flask/helpers.py",
+    "actual_other_files": [
+      "CHANGES.rst",
+      "src/flask/ctx.py"
+    ],
+    "recommendations": [
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 47,
+        "historical_seed_commits": 85,
+        "time_weighted_pair_support": 22.361,
+        "historical_confidence": 0.5529,
+        "temporal_confidence": 0.5306,
+        "selective_score": 0.46493,
+        "score": 0.46493,
+        "method": "selective_temporal",
+        "reason": "Changed together in 47 earlier commits; 85 earlier commits touched src/flask/helpers.py"
+      },
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 37,
+        "historical_seed_commits": 85,
+        "time_weighted_pair_support": 19.891,
+        "historical_confidence": 0.4353,
+        "temporal_confidence": 0.472,
+        "selective_score": 0.40941,
+        "score": 0.40941,
+        "method": "selective_temporal",
+        "reason": "Changed together in 37 earlier commits; 85 earlier commits touched src/flask/helpers.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "ab6a8b0330845c80d661a748314691302ea7d8f7",
+    "known_file": "tests/test_cli.py",
+    "actual_other_files": [],
+    "recommendations": [
+      {
+        "file": "src/flask/cli.py",
+        "historical_pair_commits": 34,
+        "historical_seed_commits": 122,
+        "time_weighted_pair_support": 19.389,
+        "historical_confidence": 0.2787,
+        "temporal_confidence": 0.5982,
+        "selective_score": 0.51072,
+        "score": 0.51072,
+        "method": "selective_temporal",
+        "reason": "Changed together in 34 earlier commits; 122 earlier commits touched tests/test_cli.py"
+      },
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 40,
+        "historical_seed_commits": 122,
+        "time_weighted_pair_support": 15.899,
+        "historical_confidence": 0.3279,
+        "temporal_confidence": 0.4905,
+        "selective_score": 0.41037,
+        "score": 0.41037,
+        "method": "selective_temporal",
+        "reason": "Changed together in 40 earlier commits; 122 earlier commits touched tests/test_cli.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "1626aff602e3316642e69927333041370095c321",
+    "known_file": "tests/test_cli.py",
+    "actual_other_files": [],
+    "recommendations": [
+      {
+        "file": "src/flask/cli.py",
+        "historical_pair_commits": 34,
+        "historical_seed_commits": 123,
+        "time_weighted_pair_support": 19.389,
+        "historical_confidence": 0.2764,
+        "temporal_confidence": 0.5803,
+        "selective_score": 0.4963,
+        "score": 0.4963,
+        "method": "selective_temporal",
+        "reason": "Changed together in 34 earlier commits; 123 earlier commits touched tests/test_cli.py"
+      },
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 40,
+        "historical_seed_commits": 123,
+        "time_weighted_pair_support": 15.899,
+        "historical_confidence": 0.3252,
+        "temporal_confidence": 0.4758,
+        "selective_score": 0.39878,
+        "score": 0.39878,
+        "method": "selective_temporal",
+        "reason": "Changed together in 40 earlier commits; 123 earlier commits touched tests/test_cli.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "ca2bfbb0ac66fbbeeedbf6bbe317bee45cb23d29",
+    "known_file": "src/flask/app.py",
+    "actual_other_files": [
+      "src/flask/typing.py",
+      "tests/test_basic.py"
+    ],
+    "recommendations": [
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 59,
+        "historical_seed_commits": 128,
+        "time_weighted_pair_support": 33.137,
+        "historical_confidence": 0.4609,
+        "temporal_confidence": 0.4875,
+        "selective_score": 0.44664,
+        "score": 0.44664,
+        "method": "selective_temporal",
+        "reason": "Changed together in 59 earlier commits; 128 earlier commits touched src/flask/app.py"
+      },
+      {
+        "file": "src/flask/blueprints.py",
+        "historical_pair_commits": 41,
+        "historical_seed_commits": 128,
+        "time_weighted_pair_support": 24.661,
+        "historical_confidence": 0.3203,
+        "temporal_confidence": 0.3628,
+        "selective_score": 0.32602,
+        "score": 0.32602,
+        "method": "selective_temporal",
+        "reason": "Changed together in 41 earlier commits; 128 earlier commits touched src/flask/app.py"
+      },
+      {
+        "file": "src/flask/scaffold.py",
+        "historical_pair_commits": 38,
+        "historical_seed_commits": 128,
+        "time_weighted_pair_support": 23.761,
+        "historical_confidence": 0.2969,
+        "temporal_confidence": 0.3496,
+        "selective_score": 0.31323,
+        "score": 0.31323,
+        "method": "selective_temporal",
+        "reason": "Changed together in 38 earlier commits; 128 earlier commits touched src/flask/app.py"
+      }
+    ]
+  },
+  {
+    "commit_id": "60b845ebabeb77e401186f4b83de21d3f9c6a9d7",
+    "known_file": "src/flask/typing.py",
+    "actual_other_files": [
+      "tests/typing/typing_route.py"
+    ],
+    "recommendations": [
+      {
+        "file": "src/flask/app.py",
+        "historical_pair_commits": 18,
+        "historical_seed_commits": 28,
+        "time_weighted_pair_support": 14.222,
+        "historical_confidence": 0.6429,
+        "temporal_confidence": 0.6989,
+        "selective_score": 0.55791,
+        "score": 0.55791,
+        "method": "selective_temporal",
+        "reason": "Changed together in 18 earlier commits; 28 earlier commits touched src/flask/typing.py"
+      },
+      {
+        "file": "CHANGES.rst",
+        "historical_pair_commits": 19,
+        "historical_seed_commits": 28,
+        "time_weighted_pair_support": 12.989,
+        "historical_confidence": 0.6786,
+        "temporal_confidence": 0.6383,
+        "selective_score": 0.50363,
+        "score": 0.50363,
+        "method": "selective_temporal",
+        "reason": "Changed together in 19 earlier commits; 28 earlier commits touched src/flask/typing.py"
+      },
+      {
+        "file": "src/flask/blueprints.py",
+        "historical_pair_commits": 16,
+        "historical_seed_commits": 28,
+        "time_weighted_pair_support": 11.874,
+        "historical_confidence": 0.5714,
+        "temporal_confidence": 0.5835,
+        "selective_score": 0.45472,
+        "score": 0.45472,
+        "method": "selective_temporal",
+        "reason": "Changed together in 16 earlier commits; 28 earlier commits touched src/flask/typing.py"
+      }
+    ]
+  }
+]

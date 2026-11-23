@@ -1,0 +1,15 @@
+phase,method,threshold,events,relevant_file_instances,true_recommendations,false_recommendations,total_recommendations,precision,recall,event_hit_rate,coverage,inspections_per_event,false_alerts_per_event,utility_per_event
+validation,popularity,0.0,843,1388,60,2418,2478,0.0242,0.0432,0.1266,0.9798,2.9395,2.8683,-0.6459
+validation,static_confidence,0.0,843,1388,463,1969,2432,0.1904,0.3336,0.6561,0.968,2.8849,2.3357,-0.0347
+validation,broken_ripple,0.0,843,1388,188,211,399,0.4712,0.1354,0.3101,0.312,0.4733,0.2503,0.1604
+validation,temporal_confidence,0.0,843,1388,524,1908,2432,0.2155,0.3775,0.7363,0.968,2.8849,2.2633,0.0558
+validation,selective_temporal,0.25,843,1388,331,437,768,0.431,0.2385,0.4937,0.4757,0.911,0.5184,0.263
+validation,static_confidence_gated,0.35,843,1388,296,501,797,0.3714,0.2133,0.443,0.5077,0.9454,0.5943,0.2026
+validation,temporal_confidence_gated,0.4,843,1388,346,525,871,0.3972,0.2493,0.5063,0.5291,1.0332,0.6228,0.2547
+test,popularity,0.0,815,1882,175,2231,2406,0.0727,0.093,0.3593,0.984,2.9521,2.7374,-0.4696
+test,static_confidence,0.0,815,1882,578,1806,2384,0.2424,0.3071,0.729,0.9804,2.9252,2.216,0.1552
+test,broken_ripple,0.0,815,1882,306,333,639,0.4789,0.1626,0.4127,0.4479,0.784,0.4086,0.2733
+test,temporal_confidence,0.0,815,1882,638,1746,2384,0.2676,0.339,0.7762,0.9804,2.9252,2.1423,0.2472
+test,selective_temporal,0.25,815,1882,457,645,1102,0.4147,0.2428,0.5749,0.6687,1.3521,0.7914,0.3629
+test,static_confidence_gated,0.35,815,1882,440,636,1076,0.4089,0.2338,0.5503,0.6552,1.3202,0.7804,0.3448
+test,temporal_confidence_gated,0.4,815,1882,497,698,1195,0.4159,0.2641,0.6201,0.7178,1.4663,0.8564,0.3957

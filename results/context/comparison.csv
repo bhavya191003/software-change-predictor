@@ -1,0 +1,7 @@
+phase,method,threshold,events,relevant_file_instances,true_recommendations,false_recommendations,total_recommendations,precision,recall,coverage,hit_rate,inspections_per_event,false_alerts_per_event
+validation,static_code,0.45,506,532,77,229,306,0.2516,0.1447,0.3597,0.2391,0.6047,0.4526
+validation,temporal_code,0.35,506,532,150,369,519,0.289,0.282,0.5909,0.5087,1.0257,0.7292
+validation,role_aware_code,0.35,506,532,119,249,368,0.3234,0.2237,0.4625,0.4217,0.7273,0.4921
+test,static_code,0.45,623,876,117,250,367,0.3188,0.1336,0.3403,0.2754,0.5891,0.4013
+test,temporal_code,0.35,623,876,236,450,686,0.344,0.2694,0.6196,0.5607,1.1011,0.7223
+test,role_aware_code,0.35,623,876,190,331,521,0.3647,0.2169,0.5297,0.482,0.8363,0.5313

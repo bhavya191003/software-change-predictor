@@ -1,26 +1,28 @@
-# Byte-compiled / optimized / DLL files
+# Python caches and local environments
 __pycache__/
 *.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# Environment
-.env
-.venv
-env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
 venv/
+env/
+.coverage
+htmlcov/
 
-# Logs
-logs/
-*.log
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+.aws/
+*.pem
+*.key
 
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# VS Code
+# Editor and operating system files
+.DS_Store
+._*
+.idea/
 .vscode/
-
-# Project specific
-output.csv
+*.swp
+*.swo

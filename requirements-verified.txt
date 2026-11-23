@@ -1,0 +1,7 @@
+# Direct dependency versions used for the verification run
+pandas==2.3.3
+numpy==2.0.2
+scikit-learn==1.6.1
+joblib==1.5.3
+gitpython==3.2.1
+streamlit==1.50.0
